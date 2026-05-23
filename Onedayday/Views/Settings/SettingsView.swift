@@ -17,7 +17,7 @@ struct SettingsView: View {
     private let tabs: [(icon: String, key: String)] = [
         ("globe", "tab_general"),
         ("command", "tab_shortcuts"),
-        ("square.grid.2x2", "template_section"),
+        ("square.grid.2x2", "tab_templates"),
         ("desktopcomputer", "tab_devices")
     ]
 
@@ -123,9 +123,18 @@ struct GeneralSettingsTab: View {
             }
 
             Spacer()
-            Text(loc.t("version_tagline"))
-                .font(.system(size: 10)).foregroundStyle(.tertiary)
-                .padding(.bottom, 8)
+            HStack(spacing: 8) {
+                Text(loc.t("version_tagline"))
+                    .font(.system(size: 10)).foregroundStyle(.tertiary)
+                Button(loc.t("check_updates")) {
+                    if let url = URL(string: "https://github.com/adrianyaoma-commits/Onedayday/releases") {
+                        NSWorkspace.shared.open(url)
+                    }
+                }
+                .buttonStyle(.plain)
+                .font(.system(size: 10)).foregroundStyle(.blue)
+            }
+            .padding(.bottom, 8)
         }.padding(.horizontal, 16).padding(.top, 12)
         .sheet(isPresented: $showPrivacySheet) {
             VStack(alignment: .leading, spacing: 16) {

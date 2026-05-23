@@ -31,7 +31,11 @@
       "Bash(DEVELOPER_DIR=\"/Applications/Xcode.app/Contents/Developer\" xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug)",
       "Bash(echo \"EXIT_CODE=$?\")",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git remote *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git credential-osxkeychain *)"
     ]
   }
 }
