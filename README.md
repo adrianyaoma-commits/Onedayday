@@ -117,6 +117,24 @@ Onedayday/
 
 ---
 
+## ⚠️ macOS 下载提示“软件已损坏，请移至废纸篓”怎么办？
+
+别担心，软件并没有损坏！这是因为 Onedayday 是由独立开发者打造的未签名应用，被 macOS 的 **Gatekeeper** 安全机制拦截了。
+
+只需一分钟即可解决：
+
+1. 将解压后的 `Onedayday.app` 拖入你的 **「应用程序」** 文件夹。
+2. 打开 Mac 的 **「终端 (Terminal)」**。
+3. 复制并粘贴以下命令，然后回车（可能需要输入你的开机密码）：
+
+```bash
+sudo xattr -cr /Applications/Onedayday.app
+```
+
+再次打开软件，就可以畅快使用了！
+
+---
+
 ## 💬 写在最后
 
 软件完全开源免费。如果你在使用中遇到问题，或者有让它变得更好的好点子，非常欢迎在 [Issues](https://github.com/adrianyaoma-commits/Onedayday/issues) 里面给我留言。
