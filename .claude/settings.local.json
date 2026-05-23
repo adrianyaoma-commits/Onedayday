@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 install *)",
+      "Bash(pyinstaller *)",
+      "Bash(sw_vers)",
+      "Bash(swift --version)",
+      "Bash(xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug build)",
+      "Read(//Applications/Xcode.app/**)",
+      "Bash(mdfind \"kMDItemKind == 'Application'\")",
+      "Bash(DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project /Users/apple/Desktop/Onedayday/Onedayday.xcodeproj -scheme Onedayday -configuration Debug build)",
+      "Bash(grep -v '.sheet\\(isPresented: $showFocus\\)')",
+      "Bash(DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project /Users/apple/Desktop/Onedayday/Onedayday.xcodeproj -scheme Onedayday -configuration Debug clean build)",
+      "WebSearch",
+      "Bash(grep -v '\"\\\\\\({\\\\|}\\\\|:\\\\|,\\\\|/\\\\| \\\\|-\\\\|+\\\\|0\\\\|1\\\\|2\\\\|3\\\\|4\\\\|5\\\\|6\\\\|7\\\\|8\\\\|9\\\\\\)\"')",
+      "Bash(grep '\"[A-Za-z ]\\\\{3,\\\\}\"')",
+      "Bash(python3 *)",
+      "Bash(DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug build)",
+      "Bash(DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug clean build)",
+      "Bash(echo \"---EXIT:$?\")",
+      "Bash(sips -z 16 16 \"/Users/apple/Desktop/Onedayday/LOGO.png\" --out icon_16x16.png)",
+      "Bash(sips -z 32 32 \"/Users/apple/Desktop/Onedayday/LOGO.png\" --out icon_16x16@2x.png)",
+      "Bash(sips -z 32 32 \"/Users/apple/Desktop/Onedayday/LOGO.png\" --out icon_32x32.png)",
+      "Bash(sips -z 64 64 \"/Users/apple/Desktop/Onedayday/LOGO.png\" --out icon_32x32@2x.png)",
+      "Bash(sips -z 128 128 \"/Users/apple/Desktop/Onedayday/LOGO.png\" --out icon_128x128.png)",
+      "Bash(xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug -quiet)",
+      "Bash(sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer)",
+      "Bash(xcode-select -p)",
+      "Bash(xcode-select -s /Applications/Xcode.app/Contents/Developer)",
+      "Bash(DEVELOPER_DIR=\"/Applications/Xcode.app/Contents/Developer\" xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug -quiet)",
+      "Bash(DEVELOPER_DIR=\"/Applications/Xcode.app/Contents/Developer\" xcodebuild -project Onedayday.xcodeproj -scheme Onedayday -configuration Debug)",
+      "Bash(echo \"EXIT_CODE=$?\")",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

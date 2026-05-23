@@ -1,0 +1,31 @@
+# Xcode
+DerivedData/
+*.xcuserdata
+*.xcworkspace/xcuserdata/
+build/
+*.mode1v3
+*.mode2v3
+*.pbxuser
+!default.pbxuser
+*.moved-aside
+*.perspectivev3
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Python
+__pycache__/
+*.pyc
+dist/
+*.egg-info/
+
+# macOS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Sensitive
+*.env
